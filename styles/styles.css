@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    background: hsla(11, 82%, 87%, 1);
+
+    background: radial-gradient(circle, hsla(11, 82%, 87%, 90%) 38%, hsla(299, 85%, 90%, 60%) 10%);
+
+    background: -moz-radial-gradient(circle, hsla(11, 82%, 87%, 90%) 38%, hsla(299, 85%, 90%, 50%) 10%);
+
+    background: -webkit-radial-gradient(circle, hsla(11, 82%, 87%, 10%) 38%, hsla(299, 85%, 90%, 40%) 82%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F9CDC3", endColorstr="#FACEFB", GradientType=1);
+    background-repeat: no-repeat;
+
+}
+p {
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.mainContainer {
+    height: 100vh;
+    display: block;
+
+}
+
+header {
+    /*     border: 2px solid black;
+    border-radius: 10px; */
+   
+    height: 100px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: hsla(11, 82%, 87%, 1);
+
+    background: linear-gradient(135deg, hsla(11, 82%, 87%, 1) 14%, hsla(299, 85%, 90%, 1) 76%);
+
+    background: -moz-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 14%, hsla(299, 85%, 90%, 1) 76%);
+
+    background: -webkit-linear-gradient(135deg, hsla(11, 82%, 87%, 1) 14%, hsla(299, 85%, 90%, 1) 76%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#F9CDC3", endColorstr="#FACEFB", GradientType=1);
+    box-shadow: 5px 20px 20px rgba(249, 205, 195, 40%);
+}
+
+.ladoIzquierdoDelHeader {
+    /*     border: 2px solid black;
+    border-radius: 10px; */
+    
+    
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    text-justify: center;
+}
+
+.headerImg {
+   /*      border: 2px solid black;
+    border-radius: 10px; */
+
+    height: 150px;
+    border-radius: 999px;
+    margin-left: 20px;
+}
+
+.navContainer {
+    /*     border: 2px solid black;
+    border-radius: 10px; */
+
+    height: inherit;
+    width: 500px;
+    position: relative;
+}
+
+.itemConteiner {
+    /*     border: 2px solid black;
+    border-radius: 10px; */
+
+    width: 500px;
+    height: inherit;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    padding-right: 20px;
+    
+}
+
+.caja {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    line-height: 1.5;
+    
+}
+
+.navItem {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 5px;
+    
+}
+
+.navItem:hover {
+
+    border: 1px solid hsla(299, 85%, 90%, 50%);
+    border-radius: 10px;
+    padding: 10px;
+
+    background-color: rgb(250, 206, 251);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+main {
+
+    /*     border: 2px solid black;
+    border-radius: 10px; */
+
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.mainContent {
+
+    /*     border: 2px solid black;
+    border-radius: 10px;
+ */
+    font-size: x-large;
+    text-align: center;
+    line-height: 1.5;
+    font-style: italic;
+    border-radius: 10px;
+
+    padding: 20px;
+    width: 600px;
+    height: 600px;
+    box-shadow: 5px 20px 20px rgba(20, 50, 60, 30%);
+    
+    transform: rotate(-2deg);
+}
+
+.circle:hover {
+    -webkit-transform: scale(1.15);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/* .fotoPrincipal {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 10%); 
+    box-shadow: 5px 20px 20px rgba(20,50, 60, 30%);
+}
+
+.fotoPrincipal::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 69%,rgba(255,255,255,1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.circle {
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+
+    -webkit-transition-property: -webkit-transform;
+   -moz-transition-property: -moz-transform;
+   -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    -webkit-transition-duration: 3s;
+    -moz-transition-duration: 3s;
+    -o-transition-duration: 3s; 
+    transition-duration: 3s;
+}
+
+.circle img {
+    border-radius: 50%;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 10%);
+}
+
+.circle:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at center,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 1) 70%,
+            rgba(255, 255, 255, 1) 100%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
